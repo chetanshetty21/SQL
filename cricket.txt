@@ -1,0 +1,26 @@
+CREATE DATABASE cricket;
+
+show databases;
+
+use cricket;
+
+SELECT *FROM details;
+
+
+CREATE TABLE details(id int,name varchar(30),age int,salary bigint);
+SELECT count(*) from details;
+
+INSERT INTO details VALUES(1,'chetan',24,256325);
+INSERT INTO details VALUES(2,'jag',26,652655);
+
+ALTER TABLE details ADD COLUMN education varchar(30) default 'BE';
+ALTER TABLE details DROP COLUMN age;
+
+ALTER TABLE details RENAME COLUMN salary to salaries;
+
+
+alter table details modify column name varchar(50);
+alter table details modify column id bigint;
+alter table details modify column id  varchar(20);
+desc details;
+RENAME table 

@@ -1,0 +1,6 @@
+download sql from xworkz
+give no to update
+and click for coustom
+selcect 8.0 server 
+appliction
+shell
