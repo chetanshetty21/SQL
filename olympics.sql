@@ -222,8 +222,34 @@ UPDATE olympic_games SET country = 'Bharath', player_name = 'ABC' WHERE id = 1 O
 */
 
 /*DELETE FROM olympic_games;*
-  DELETE FROM olympic_games WHERE id=6;
-/ 
+  DELETE FROM olympic_games WHERE id=6;*/
+
+aggregate functions: uesd for calculations on a particular column.aggregate functions are used only for numeric data.
+1)count,2)sum,3)min,4)max,5)avg
+1) COUNT: will return the no of rows from the table or coloumn.
+
+SELECT COUNT(*)FROM olympic games;
+SELECT COUNT(COUNTRY) as no_of_records FROM olympic_games;
+SELECT COUNT(no_of_players)FROM  olympic_games;
+SELECT * FROM olympic_games;
+
+
+sum: will return the sum of all the rows from particular coloumn
+
+SELCET SUM(no_of_teams)from olympic_games;
 
 
 
+max:will return the max value from the coloumn
+SELECT MAX(winning_price_amount) as max_price from  olympic_games;
+
+min:will return the min value from the coloumn
+SELECT MIN(winning_price_amount) as max_price from  olympic_games;
+
+avg:will return the sum of all the values/no of records from the coloumn
+SELECT AVG(winning_pricze_amount)from olympic_games;
+
+
+length: will return the no_of_characters in a particular column;
+
+SELECT length(game_type) as length_of_data from olympic_games;
